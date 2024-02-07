@@ -1,4 +1,3 @@
-package Dalima;
 import java.util.Scanner;
 
 public class Carta {
