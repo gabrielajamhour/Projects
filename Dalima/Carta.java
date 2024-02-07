@@ -1,6 +1,7 @@
+package Dalima;
 import java.util.Scanner;
 
-public class Dalima {
+public class Carta {
     public static int tamPedido;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -141,8 +142,13 @@ public class Dalima {
         // Si todo está correcto, nada ocurre
 
         System.out.println("");
-        System.out.println("Total a pagar: " + String.format("%.2f", total) + " $");  // 2 casas decimales
+        System.out.println("Subtotal: " + String.format("%.2f", total) + " $");  // 2 casas decimales
+    
+        double tasaServicio = total * 0.18;
+        System.out.println("Tasa de servicio: " + String.format("%.2f", tasaServicio) + " $");
 
+        double totalConServicio = total + tasaServicio;
+        System.out.println("Total a pagar: " + String.format("%.2f", totalConServicio) + " $");
     }
 
     public static String[] pedido(Scanner scanner, String[] platos) {
@@ -173,7 +179,7 @@ public class Dalima {
         double total = 0;
 
         for(String plato : pedido) {
-            for(int i = 0; i < 14; i++) { 
+            for(int i = 0; i < platos.length; i++) { 
                 if (plato.equals(platos[i])) {
                     total += precios[i];
                     break;
