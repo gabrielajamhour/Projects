@@ -5,7 +5,7 @@ public class Dalima {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String[] platos = {
+        private static String[] platos = {
             "Montadito Nikkei",
             "Ostra de Leche de Tigre",
             "Ceviche Clásico",
@@ -25,7 +25,7 @@ public class Dalima {
             "Tarta de Queso con Guanábana"
         };
 
-        double[] precios = {
+        private static double[] precios = {
             6,
             3.5,
             16.5,
