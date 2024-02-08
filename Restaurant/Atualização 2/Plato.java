@@ -1,4 +1,4 @@
- 
+package Dalima;  
 
 public class Plato {
     private String nombre;
