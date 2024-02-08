@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Carta {
-    private List<Plato> platos;             // Array del tipo Platos, no hace falta definir su tamaño (ilimitado)
+    private List<Plato> platos;             // Array del tipo Platos, no hace falta definir su tamaÃ±o (ilimitado)
 
     public Carta() {
         this.platos = new ArrayList<>();    // Definimos platos como un nuevo Array
@@ -19,7 +19,7 @@ public class Carta {
         for(int i = 0; i < platos.size(); i++) {    //
             Plato plato = platos.get(i);            //
             System.out.println("[" + (i+1) + "] " + plato.getNombre());
-            System.out.println(plato.getDescripcion() + " - " + String.format("%.2f", plato.getPrecio()) + "�");
+            System.out.println(plato.getDescripcion() + " - " + String.format("%.2f", plato.getPrecio()) + "€");
         }
     }
 }
