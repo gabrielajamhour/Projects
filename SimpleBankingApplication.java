@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+a
 public class Bank {
     static double balance = 0;              // If any changes are made to this variable through object,
                                             // it will reflect in other objects as well (static)
